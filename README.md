@@ -1,9 +1,10 @@
 # Blackjack Project
 
-# Description
+## Description
 
-# Lessons Learned
+## Lessons Learned
 
-# Technologies Used
+## Technologies Used
 
-# Things I Could've Done Better
+## Things I Could've Done Better
+

@@ -8,7 +8,6 @@ public class Deck {
 
     public Deck() {
         cards = new Stack<>();
-        // populate deck
         populateDeck();
     }
 
@@ -50,14 +49,6 @@ public class Deck {
                 cards.push(new Card(suit,rank));
             }
         }
-    }
-
-
-    /* ------------------------------------------------
-        checkSize
-    ------------------------------------------------ */
-    public int checkSize() {
-        return cards.size();
     }
 
 
