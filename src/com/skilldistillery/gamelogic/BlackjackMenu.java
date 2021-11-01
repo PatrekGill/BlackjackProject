@@ -71,13 +71,14 @@ public class BlackjackMenu extends Menu {
 
             System.out.println(); // gap in console
 
-        } while (hitting && (!player.isHandBust()) && (!dealer.deckIsEmpty()));
+        } while (hitting && (!player.isHandBust()) && (!dealer.deckIsEmpty()) && (player.getHandValue() != 21));
 
         if (player.isHandBust()) {
             System.out.println(player.getName() + " busted");
-            player.showHand(true);
             player.setPlaying(false);
         }
+        
+        player.showHand(true);
     }
 
 

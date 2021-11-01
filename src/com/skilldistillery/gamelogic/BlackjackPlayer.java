@@ -51,6 +51,7 @@ public class BlackjackPlayer extends Player implements PersonWithBlackjackHand {
         hand.clear();
     }
 
+    
     /* ------------------------------------------------
         showHand
     ------------------------------------------------ */
@@ -61,7 +62,7 @@ public class BlackjackPlayer extends Player implements PersonWithBlackjackHand {
             handAsString = handAsString.replaceFirst(":"," (Value: " + getHandValue() + "):");
         }
 
-        System.out.println(handAsString);
+        System.out.print(handAsString);
 
     }
 }
