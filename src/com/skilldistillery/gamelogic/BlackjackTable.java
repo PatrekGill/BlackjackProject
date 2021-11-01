@@ -50,7 +50,7 @@ public class BlackjackTable extends Table<BlackjackPlayer> {
 
 
     /* ------------------------------------------------
-        askPlayersToHitOrStay
+        askPlayersForBets
     ------------------------------------------------ */
     private void askPlayersForBets() {
         for (BlackjackPlayer player : players) {
