@@ -146,7 +146,7 @@ public class BlackjackTable extends Table<BlackjackPlayer> {
                 player.setTotalMoney(playersCurrentMoney - playersBet);
 
             } else if ((playersHandValue == 21) && (dealersHandValue != 21)) {
-
+            	
                 if (player.isHandNatural()) {
                     System.out.println(playersName + " got a Blackjack!");
                     player.setTotalMoney(playersCurrentMoney + (playersBet + (playersBet * 1.5)));
@@ -157,12 +157,13 @@ public class BlackjackTable extends Table<BlackjackPlayer> {
 
                 }
 
-            } else if (playersHandValue > dealersHandValue) {
+            } else if (playersHandValue < dealersHandValue && dealerBusted) {
                 System.out.println(playersName + " beat the dealer!");
                 player.setTotalMoney(playersCurrentMoney + playersBet);
 
             } else {
-                System.out.println(playersName + " tied with the dealer.");
+            	System.out.println(playersName + " tied with the dealer.");            	
+                
             }
 
             System.out.println(player.getName() + "'s current money: " + player.getTotalMoney());
